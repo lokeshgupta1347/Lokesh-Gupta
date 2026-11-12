@@ -1,0 +1,9 @@
+# Ignore everything
+/*
+
+# Allow only Finova
+!/Finova/
+!/Finova/**
+
+# Track gitignore itself
+!.gitignore
