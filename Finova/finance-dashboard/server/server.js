@@ -6,6 +6,7 @@ const morgan = require('morgan');
 const pool = require('./config/db');
 
 const authRoutes = require('./routes/authRoutes');
+const accountRoutes = require('./routes/accountRoutes');
 
 const app = express();
 
@@ -27,6 +28,7 @@ app.get('/api/health', async (req, res) => {
 });
 
 app.use('/api/auth', authRoutes);
+app.use('/api/accounts', accountRoutes);
 
 // 404 handler
 app.use((req, res) => {
